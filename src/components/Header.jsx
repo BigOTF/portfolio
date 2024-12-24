@@ -26,12 +26,12 @@ const Header = () => {
                 <a href='#contact' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>Contact Me</a>
             </ul>
 
-            <div className='bg-[#000] px-5 py-4 flex items-center gap-2 w-[153px] h-14 rounded-[4px] cursor-pointer'>
+            <a href='/resume.pdf' download="resume.pdf" className='bg-[#000] px-5 py-4 flex items-center gap-2 w-[153px] h-14 rounded-[4px] cursor-pointer'>
                 <p className='font-sora font-semibold text-xl text-[#fff]'>Resume</p>
                 <div>
                     <FiDownload className='text-[#fff] w-5 h-5'/>
                 </div>
-            </div>
+            </a>
         </div>
 
         {/* small screen nav */}
@@ -49,10 +49,10 @@ const Header = () => {
             </div>
 
             <ul className={showNav ? 'hidden' : 'flex flex-col gap-8'}>
-                <li id='about' className='font-sora font-semibold text-xl text-[#000]'>About Me</li>
-                <li id='skill' className='font-sora font-semibold text-xl text-[#000]'>Skills</li>
-                <li id='project' className='font-sora font-semibold text-xl text-[#000]'>Projects</li>
-                <li id='contact' className='font-sora font-semibold text-xl text-[#000]'>Contact Me</li>
+                <a href='#about' className='font-sora font-semibold text-xl text-[#000]'>About Me</a>
+                <a href='#skills' className='font-sora font-semibold text-xl text-[#000]'>Skills</a>
+                <a href='#project' className='font-sora font-semibold text-xl text-[#000]'>Projects</a>
+                <a href='#contact' className='font-sora font-semibold text-xl text-[#000]'>Contact Me</a>
             </ul>
            
         </div>
