@@ -6,16 +6,18 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Experience from './components/Experience';
 import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
 
   return (
-   <div className='pb-[600px]'>
+   <div className=''>
     <Header />
     <Hero />
     <Skills />
     <Experience />
     <About />
+    <Projects />
    </div>
   )
 }

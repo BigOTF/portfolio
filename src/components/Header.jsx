@@ -11,7 +11,7 @@ const Header = () => {
     }
 
   return (
-    <header className='w-full px-4 py-4 lg:px-20 lg:py-6 sticky top-0 z-10'>
+    <header className='w-full px-4 py-4 lg:px-20 lg:py-6 sticky top-0 z-10 shadow-lg'>
 
         {/* large screen nav */}
         <div className='px-8 lg:flex justify-between items-center hidden'>
@@ -48,13 +48,22 @@ const Header = () => {
                 </div>
             </div>
 
-            <ul className={showNav ? 'hidden' : 'flex flex-col gap-8'}>
-                <a href='#about' className='font-sora font-semibold text-xl text-[#000]'>About Me</a>
-                <a href='#skills' className='font-sora font-semibold text-xl text-[#000]'>Skills</a>
-                <a href='#project' className='font-sora font-semibold text-xl text-[#000]'>Projects</a>
-                <a href='#contact' className='font-sora font-semibold text-xl text-[#000]'>Contact Me</a>
-            </ul>
-           
+            <div className={showNav ? 'hidden' : 'flex flex-col gap-8'}>
+                <ul className='flex flex-col gap-8'>
+                    <a href='#about' className='font-sora font-semibold text-xl text-[#000]'>About Me</a>
+                    <a href='#skills' className='font-sora font-semibold text-xl text-[#000]'>Skills</a>
+                    <a href='#project' className='font-sora font-semibold text-xl text-[#000]'>Projects</a>
+                    <a href='#contact' className='font-sora font-semibold text-xl text-[#000]'>Contact Me</a>
+                </ul>
+
+                <a href='/resume.pdf' download="resume.pdf" className='bg-[#000] px-5 py-6 flex items-center justify-center gap-2  h-14 rounded-[4px] cursor-pointer'>
+                    <p className='font-sora font-semibold text-xl text-[#fff]'>Resume</p>
+                    <div>
+                        <FiDownload className='text-[#fff] w-5 h-5'/>
+                    </div>
+                </a>
+            </div>
+
         </div>
 
     </header>
