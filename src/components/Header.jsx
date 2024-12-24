@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FiDownload } from 'react-icons/fi'
+import { FiDownload } from "react-icons/fi";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { TiTimes } from 'react-icons/ti';
 
@@ -11,7 +11,7 @@ const Header = () => {
     }
 
   return (
-    <header className='w-full px-4 py-4 lg:px-20 lg:py-6'>
+    <header className='w-full px-4 py-4 lg:px-20 lg:py-6 sticky top-0 z-10'>
 
         {/* large screen nav */}
         <div className='px-8 lg:flex justify-between items-center hidden'>
