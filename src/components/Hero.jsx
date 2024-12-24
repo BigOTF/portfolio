@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaFacebookF, FaGithub } from 'react-icons/fa'
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
+import AOS from 'aos';
+
 const Hero = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1500,
+          easing: 'ease-in-out',
+          offset: 100,
+        });
+    }, []);
+
   return (
     <main className='w-full px-4 py-10 lg:px-20 lg:py-[60px]'>
         <div className='lg:px-8 flex flex-col gap-12 lg:flex-row lg:gap-0 lg:items-center'>
@@ -12,7 +23,7 @@ const Hero = () => {
                 <img src={'/heroMobile.png'} alt='hero'/>
             </div>
 
-            <div className='flex flex-col gap-8 lg:gap-10'>
+            <div data-aos="fade-up" className='flex flex-col gap-8 lg:gap-10'>
                 <div className='flex flex-col gap-8'>
                     <div className='flex flex-col gap-3 lg:gap-5'>
                         <p className='flex items-center gap-4 font-sora text-[28px] leading-8 lg:text-5xl'>Hello I'm <span className='font-extrabold text-[#000]'>Olamide.</span></p>
@@ -25,7 +36,7 @@ const Hero = () => {
                     </div>
                 </div> 
 
-                <div className='flex items-center gap-6 lg:gap-8'>
+                <div data-aos="fade-up" className='flex items-center gap-6 lg:gap-8'>
                     <a href='https://github.com/BigOTF' target='_blank' className='w-12 h-12 px-3 py-3 lg:w-14 lg:h-14 lg:px-4 lg:py-4 rounded-[4px] border-2 border-black hover:bg-black text-black hover:text-white transition-all duration-300 flex items-center justify-center cursor-pointer'>
                         <FaGithub className='w-5 h-5'/>
                     </a>
@@ -42,7 +53,7 @@ const Hero = () => {
             </div>
 
             {/* large screen hero */}
-            <div className='hidden lg:flex'>
+            <div data-aos="fade-up" className='hidden lg:flex'>
                 <img src={'/hero.png'} alt='hero'/>
             </div>
 
