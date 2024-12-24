@@ -20,10 +20,10 @@ const Header = () => {
             </div>
 
             <ul className='flex items-center gap-8'>
-                <li id='about' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>About Me</li>
-                <li id='skill' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>Skills</li>
-                <li id='project' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>Projects</li>
-                <li id='contact' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>Contact Me</li>
+                <a href='#about' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>About Me</a>
+                <a href='#skills' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>Skills</a>
+                <a href='#project' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>Projects</a>
+                <a href='#contact' className='font-sora font-semibold text-xl text-[#000] hover:text-gray-500 cursor-pointer transition-all duration-300'>Contact Me</a>
             </ul>
 
             <div className='bg-[#000] px-5 py-4 flex items-center gap-2 w-[153px] h-14 rounded-[4px] cursor-pointer'>

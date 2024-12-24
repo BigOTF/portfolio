@@ -17,7 +17,7 @@ const Skills = () => {
   }, []);
    
   return (
-    <div className='w-full px-4 py-10 lg:px-20 lg:py-[60px]'>
+    <div id='skills' className='w-full px-4 py-10 lg:px-20 lg:py-[60px]'>
         <div className='lg:px-8 flex flex-col gap-5 items-center'>
             <div>
                 <p className='flex items-center gap-4 font-sora text-[28px] leading-8 lg:text-5xl'>My <span className='font-extrabold'>Skills</span></p>
